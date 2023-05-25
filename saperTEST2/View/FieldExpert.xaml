@@ -1,0 +1,25 @@
+﻿<Page x:Class="saperTEST2.View.FieldExpert"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:saperTEST2.View"
+      mc:Ignorable="d" d:DesignWidth="300"
+      Title="Expert" Height="335">
+
+    <StackPanel Margin="0,0,0,25">
+        <StackPanel Background="LightGray" Height="320">
+            <Border Margin="6" BorderBrush="DarkGray" BorderThickness="2,2,0,0" ClipToBounds="True" >
+                <Border BorderBrush="White" BorderThickness="0 0 2 2">
+                    <TextBlock TextWrapping="Wrap" Text="С А П Ё Р" HorizontalAlignment="Center" FontFamily="Arial Black" Foreground="#FF373737"/>
+                </Border>
+            </Border>
+            <Border Margin="6 2 6 6" BorderBrush="DarkGray" BorderThickness="3,3,0,0" ClipToBounds="True" Height="240" >
+                <Border BorderBrush="White" BorderThickness="0 0 3 3">
+                    <Button Content="start" Height="15" VerticalAlignment="Top" Width="33" Click="Button_Click"/>
+                </Border>
+            </Border>
+            <Grid x:Name="grid" Height="230" Width="260" Margin="0,-260,0,0"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

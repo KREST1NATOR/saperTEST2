@@ -1,0 +1,29 @@
+﻿<Page x:Class="saperTEST2.View.Play"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:saperTEST2"
+      mc:Ignorable="d" 
+      d:DesignHeight="346" d:DesignWidth="300"
+      Title="Play">
+
+    <StackPanel x:Name="play">
+        <StackPanel Background="LightGray" Height="330" Width="300">
+            <Border Margin="6" BorderBrush="DarkGray" BorderThickness="2,2,0,0" ClipToBounds="True" >
+                <Border BorderBrush="White" BorderThickness="0 0 2 2">
+                    <TextBlock TextWrapping="Wrap" Text="С А П Ё Р" HorizontalAlignment="Center" FontFamily="Arial Black" Foreground="#FF373737"/>
+                </Border>
+            </Border>
+            <Border Margin="6 2 6 6" BorderBrush="DarkGray" BorderThickness="3,3,0,0" ClipToBounds="True" Height="270" >
+                <Border BorderBrush="White" BorderThickness="0 0 3 3">
+                    <Label Content="Уровень сложности" Height="30" Margin="0,20,0,0" VerticalAlignment="Top" Width="214" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="18" Foreground="#FF373737"/>
+                </Border>
+            </Border>
+            <Button Content="Новичок" Height="45" Margin="0,-350,0,0" Width="136" FontSize="16" FontFamily="Bahnschrift" Click="Button_Click_Easy"/>
+            <Button Content="Опытный" Height="45" Margin="0,-235,0,0" Width="136" FontSize="16" FontFamily="Bahnschrift" Click="Button_Click_Normal"/>
+            <Button Content="Эксперт" Height="45" Margin="0,-120,0,0" Width="136" FontSize="16" FontFamily="Bahnschrift" Click="Button_Click_Hard"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
+
